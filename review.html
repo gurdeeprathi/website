@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Review Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color:rgb(104, 12, 12)
+      ;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+    .reviews span{
+        color: red;
+    }
+    .container__right {
+  display: grid;
+  gap: 2rem;
+}
+.card {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.card__content {
+  display: flex;
+  gap: 1rem;
+}
+.card__details p {
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.card__details h4 {
+  text-align: right;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.img2{
+    border-image-width: 0%;
+    width: 19%;
+}
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>User Review Page</h1>
+  </header>
+
+  <section>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="5">5 stars</option>
+        <option value="4">4 stars</option>
+        <option value="3">3 stars</option>
+        <option value="2">2 stars</option>
+        <option value="1">1 star</option>
+      </select>
+
+      <label for="review">Review:</label>
+      <textarea id="review" name="review" rows="4" required></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+  <!-----------------------------------------------------------------reviews-------------------------->
+<hr>
+
+<div class="reviews">
+    <h1 class="head-review">See our <span>Reviews</span>...</h1>
+</div>
+
+   <div class="container">
+    <h1>Read what our customers love about us</h1>
+    <p>
+      Over 2000+ wedding experince consult us to enhance the
+      user experience of their wedding using our products and services.
+    </p>
+    <p>
+      We have helped vendors increase their customer base and generate
+      multifold revenue with our service.
+    </p>
+   </div>
+
+   <div class="container__right">
+    <div class="card">
+      <img src="r1.jfif" alt="user" />
+      <div class="card__content">
+        <span><i class="ri-double-quotes-l"></i></span>
+        <div class="card__details">
+          <p>
+            We had a great time collaboraring with the wedding planning team team. They
+            have my high recommendation!
+          </p>
+          <h4>- kalpesh pratap singh</h4>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+        <img class= "img2" src="r2.jpg" alt="user" />
+        <div class="card__content">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <div class="card__details">
+            <p>
+              they made our experience best we felt so much good at the venue people
+              were also praising them in their arrangement
+            </p>
+            <h4>- Navneet chaudhary</h4>
+          </div>
+        </div>
+      </div>
+        
+</body>
+
+</html>
